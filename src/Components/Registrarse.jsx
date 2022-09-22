@@ -19,7 +19,7 @@ export const Registrarse = () => {
   };
 
   return (
-    <div className="signUpScreeen">
+    <div className="signUpScreen">
       <form className="signUpForm" onSubmit={handleSubmit}>
         <div className="Field">
           <label htmlFor="mail">Correo</label>
