@@ -21,3 +21,9 @@ body {
   justify-content: center; /*center horizontaly*/
   align-items: center; /*center vertically*/
 }
+
+.signUpForm{
+    font: inherit;
+    color: black;
+    line-height: 24px;
+}
