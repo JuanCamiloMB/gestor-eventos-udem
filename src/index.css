@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,13 @@ body {
   border-radius: 50px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center; /*center horizontaly*/
   align-items: center; /*center vertically*/
 }
 
-.signUpForm{
-    font: inherit;
-    color: black;
-    line-height: 24px;
+.signUpForm {
+  font: inherit;
+  color: black;
+  line-height: 24px;
 }
