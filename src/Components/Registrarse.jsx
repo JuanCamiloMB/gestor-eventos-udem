@@ -21,8 +21,7 @@ export const Registrarse = () => {
   return (
     <div className="signUpScreen">
       <div id="Registro">
-      Registro
-      </div>
+      <p>Registro</p>
       <form className="signUpForm" onSubmit={handleSubmit}>
         <div className="Field">
           <label htmlFor="mail">Correo</label>
@@ -94,6 +93,7 @@ export const Registrarse = () => {
         </div>
         <input className="submitButton" type="submit" value="Registrar" />
       </form>
+      </div>
     </div>
   );
 };

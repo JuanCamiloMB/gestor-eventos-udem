@@ -10,13 +10,20 @@ body {
   height: 100vh;
 }
 
-.signUpScreen {
+div.signUpScreen::before {
+  content: "";
+  position: absolute;
   width: 512px;
   height: 700px;
   background: #d9d9d9;
-  mix-blend-mode: screen;
   border-radius: 50px;
+  mix-blend-mode: screen;
+}
 
+div.signUpScreen{
+  color: #000;
+  width: 512px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center; /*center horizontaly*/
@@ -24,7 +31,11 @@ body {
 }
 
 .signUpForm {
+  
   font: inherit;
-  color: black;
   line-height: 24px;
+}
+
+#Registro{
+  position: relative;
 }
