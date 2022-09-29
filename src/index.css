@@ -31,11 +31,69 @@ div.signUpScreen{
 }
 
 .signUpForm {
-  
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 650px;
   font: inherit;
   line-height: 24px;
 }
 
+.Field{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.Field input{
+  height: 30px;
+  border-radius: 50px;
+}
+
+#radioInput{
+  display: flex;
+  height: 150px;
+  /* align-items: center; */
+  justify-items: center;
+}
+
+.selectionObject{
+  display: flex;
+}
+
+
+.submitButton{
+  background-color: #D92127;
+  color: #fff;
+  width: 185px;
+  height: 50px;
+  border-radius: 50px;
+
+  margin-left: 90px;
+  margin-right: 90px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
 #Registro{
+  
+  height: 700px;
   position: relative;
+}
+
+#titleRegistro  {
+  text-align: center;
+  height: 54px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+#root{
 }

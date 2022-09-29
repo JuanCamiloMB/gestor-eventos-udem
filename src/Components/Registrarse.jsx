@@ -21,7 +21,7 @@ export const Registrarse = () => {
   return (
     <div className="signUpScreen">
       <div id="Registro">
-      <p>Registro</p>
+      <p id="titleRegistro">Registro</p>
       <form className="signUpForm" onSubmit={handleSubmit}>
         <div className="Field">
           <label htmlFor="mail">Correo</label>
@@ -63,9 +63,9 @@ export const Registrarse = () => {
             onChange={(e) => setConfirmacion(e.target.value)}
           />
         </div>
-        <div className="Field">
+        <div className="Field" id="radioInput">
           <label>Cual es el rol?</label>
-          <label htmlFor="cliente">Cliente</label>
+          <div className="selectionObject">
           <input
             type="radio"
             id="cliente"
@@ -74,7 +74,9 @@ export const Registrarse = () => {
             onChange={(e) => setRol(e.target.value)}
             defaultChecked
           />
-          <label htmlFor="logistico">Logistico</label>
+          <span htmlFor="cliente">Cliente</span>
+          </div>
+          <div className="selectionObject">
           <input
             type="radio"
             id="logistico"
@@ -82,7 +84,9 @@ export const Registrarse = () => {
             value="logistico"
             onChange={(e) => setRol(e.target.value)}
           />
-          <label htmlFor="admin">Administrador</label>
+          <span htmlFor="logistico">Logistico</span>
+          </div>
+          <div className="selectionObject">
           <input
             type="radio"
             id="admin"
@@ -90,6 +94,8 @@ export const Registrarse = () => {
             value="admin"
             onChange={(e) => setRol(e.target.value)}
           />
+          <span htmlFor="admin">Administrador</span>
+          </div>
         </div>
         <input className="submitButton" type="submit" value="Registrar" />
       </form>
