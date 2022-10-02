@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/Plaza_de_la_Libertad_-_Universidad_de_Medellín.png);
+  background-repeat: no-repeat;
+  background-size: cover; /*resize the image to cover the entire container*/
+  width: 100vw;
+  height: 100vh;
+}
+
+#logo {
+  width: 24.5vw;
+}
+
+div.signInScreen::before {
+  content: "";
+  position: absolute;
+  width: 25vw;
+  height: 35vh;
+  background: #d9d9d9;
+  border-radius: 50px;
+  mix-blend-mode: screen;
+}
+div.signInScreen {
+  color: #000;
+  width: 25vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*center horizontaly*/
+  align-items: center; /*center vertically*/
+}
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 35vh;
+  font: inherit;
+  /* line-height: 24px; */
+  align-items: center;
+}
+
+#InicioSesion {
+  height: 35vh;
+  position: relative;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5vh;
+  width: 20vw;
+  height: 6vh;
+}
+
+.Field input {
+  height: 3vh;
+  border-radius: 50px;
+}
+
+.submitButton {
+  background-color: #d92127;
+  color: #fff;
+  width: 12vw;
+  height: 7.3vh;
+  border-radius: 50px;
+
+  margin-left: 90px;
+  margin-right: 90px;
+
+  font-weight: 400;
+  font-size: 2.5vh;
+  /* line-height: 26px; */
+}
+
+#titleInicio {
+  text-align: center;
+  height: 10%;
+  margin-top: 2vh;
+  margin-bottom: 0px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 3.2vh;
+  line-height: 61px;
+}

@@ -1,13 +1,13 @@
 import React from "react";
-import { SignUp } from "../Components/SignUp";
+import SignIn from "../Components/SignIn";
 import Logo_Udem from "../Components/Logo_Udem";
-import "./SignUp.css";
+import "./SignIn.css"
 
 function App() {
   return (
     <>
       <Logo_Udem />
-      <SignUp />
+      <SignIn />
     </>
   );
 }

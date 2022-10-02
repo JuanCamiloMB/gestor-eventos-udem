@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp_page from "./Pages/SignUp_page";
+import SignIn_page from "./Pages/SignIn_page";
 import reportWebVitals from "./reportWebVitals";
 
 export default function App(){
@@ -9,6 +10,7 @@ export default function App(){
     <BrowserRouter>
       <Routes>
         <Route path="/SignUp" element={<SignUp_page/>}/>
+        <Route path="/SignIn" element={<SignIn_page/>}/>
         <Route path="*" element={"404"}/>
       </Routes>
     </BrowserRouter>
