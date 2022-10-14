@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import User from "../Models/User";
+import { Administrador, Logistico, Cliente } from "../Models/User";
 
 export const SignUp = () => {
   const [mail, setMail] = useState("");
@@ -10,12 +10,28 @@ export const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const Usuario = new User();
-    Usuario.mail = mail;
-    Usuario.username = username;
-    Usuario.password = password;
-    Usuario.rol = rol;
-    console.log(Usuario); //Usuario
+    if (rol === "admin"){
+      const newAccount = new Administrador();
+      newAccount.mail = mail;
+      newAccount.username = username;
+      newAccount.password = password;
+      console.log(newAccount); //Usuario
+    }
+    if (rol === "logistico"){
+      const newAccount = new Logistico();
+      newAccount.mail = mail;
+      newAccount.username = username;
+      newAccount.password = password;
+      console.log(newAccount); //Usuario
+    }
+    if (rol === "cliente"){
+      const newAccount = new Cliente();
+      newAccount.mail = mail;
+      newAccount.username = username;
+      newAccount.password = password;
+      console.log(newAccount); //Usuario
+    }
+    
   };
 
   return (
